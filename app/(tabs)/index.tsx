@@ -4,13 +4,18 @@ import { SafeAreaView, StyleSheet, Text } from 'react-native';
 
 export default function HomeScreen() {
   return (
-    <SafeAreaView>
+    <SafeAreaView style={styles.container}>
         <Text>Home Screen</Text>
     </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
+  container:{
+    flex:1,
+    backgroundColor:"white"
+
+  },
   titleContainer: {
     flexDirection: 'row',
     alignItems: 'center',

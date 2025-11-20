@@ -5,6 +5,15 @@ import { HapticTab } from '@/components/haptic-tab';
 import { IconSymbol } from '@/components/ui/icon-symbol';
 import { Colors } from '@/constants/theme';
 import { useColorScheme } from '@/hooks/use-color-scheme';
+import Entypo from '@expo/vector-icons/Entypo';
+import FontAwesome from '@expo/vector-icons/FontAwesome';
+import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
+import MaterialIcons from '@expo/vector-icons/MaterialIcons';
+
+
+
+
+
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
@@ -24,10 +33,31 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="market"
         options={{
-          title: 'Explore',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+          title: 'Market',
+          tabBarIcon: ({ color }) =><FontAwesome name="line-chart" size={24} color={color} />,
+        }}
+      />
+        <Tabs.Screen
+          name="explore"
+          options={{
+            title: 'Trade',
+            tabBarIcon: ({ color }) => <MaterialIcons name="candlestick-chart" size={24} color={color} />,
+          }}
+        />
+      <Tabs.Screen
+        name="wallet"
+        options={{
+          title: 'Wallet',
+          tabBarIcon: ({ color }) =><Entypo name="wallet" size={24} color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="futures"
+        options={{
+          title: 'Futures',
+          tabBarIcon: ({ color }) =><FontAwesome5 name="newspaper" size={24} color={color} />,
         }}
       />
     </Tabs>

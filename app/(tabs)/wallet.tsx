@@ -3,7 +3,7 @@ import { SafeAreaView, StyleSheet, Text } from 'react-native';
 
 export default function Wallet() {
   return (
-    <SafeAreaView>
+    <SafeAreaView style={styles.container}>
         <Text>wallet Screen</Text>
 
     </SafeAreaView>
@@ -11,6 +11,11 @@ export default function Wallet() {
 }
 
 const styles = StyleSheet.create({
+     container:{
+    flex:1,
+    backgroundColor:"white"
+
+  },
   headerImage: {
     color: '#808080',
     bottom: -90,

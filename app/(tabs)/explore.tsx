@@ -3,14 +3,19 @@ import { SafeAreaView, StyleSheet, Text } from 'react-native';
 
 export default function TabTwoScreen() {
   return (
-<SafeAreaView>
-  <Text>Explore</Text>
+<SafeAreaView style={styles.container}>
+  <Text>Trade </Text>
 
 </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
+    container:{
+    flex:1,
+    backgroundColor:"white"
+
+  },
   headerImage: {
     color: '#808080',
     bottom: -90,
