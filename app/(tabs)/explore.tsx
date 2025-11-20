@@ -4,7 +4,7 @@ import { SafeAreaView, StyleSheet, Text } from 'react-native';
 export default function TabTwoScreen() {
   return (
 <SafeAreaView style={styles.container}>
-  <Text>Trade </Text>
+  <Text className='bg-red-300 p-4 text-3xl border text-center'>Trades </Text>
 
 </SafeAreaView>
   );

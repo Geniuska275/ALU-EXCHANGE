@@ -1,11 +1,20 @@
+
+import Header from '@/components/ui/Header';
 import React from 'react';
-import { SafeAreaView, StyleSheet, Text } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
 
 
 export default function HomeScreen() {
   return (
     <SafeAreaView style={styles.container}>
-        <Text>Home Screen</Text>
+      <Header/>
+      
+        <Text className='bg-red-200 text-2xl mt-3 p-4'>Home Screen</Text>
+        <View className="flex-1 items-center justify-center bg-white">
+      <Text className="text-xl font-bold text-blue-500 text-center bg-yellow-200 p-4">
+        Welcome to Nativewind!
+      </Text>
+    </View>
     </SafeAreaView>
   );
 }
