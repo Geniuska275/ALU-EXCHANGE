@@ -1,12 +1,12 @@
 import React from 'react';
 import { SafeAreaView, StyleSheet, Text } from 'react-native';
 
-export default function TabTwoScreen() {
+export default function Market() {
   return (
-<SafeAreaView>
-  <Text>Explore</Text>
+    <SafeAreaView>
+        <Text>Market Screen</Text>
 
-</SafeAreaView>
+    </SafeAreaView>
   );
 }
 
