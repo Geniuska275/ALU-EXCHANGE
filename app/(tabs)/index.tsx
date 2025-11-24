@@ -1,20 +1,53 @@
 
 import Header from '@/components/ui/Header';
+import EvilIcons from '@expo/vector-icons/EvilIcons';
 import React from 'react';
-import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, StyleSheet, TextInput, View } from 'react-native';
 
 
 export default function HomeScreen() {
   return (
     <SafeAreaView style={styles.container}>
       <Header/>
+      <View style={{
+        alignSelf:"center",
+        width:"90%",
+        height:60,
+        backgroundColor:"#FBFBFC",
+        marginTop:20,
+        borderRadius:40,
+        padding:16,
+        flexDirection:"row",        alignItems:"center",
+        gap:10,
+      }}>
+        <EvilIcons name="search" size={24} color="black" />
       
-        <Text className='bg-red-200 text-2xl mt-3 p-4'>Home Screen</Text>
-        <View className="flex-1 items-center justify-center bg-white">
-      <Text className="text-xl font-bold text-blue-500 text-center bg-yellow-200 p-4">
-        Welcome to Nativewind!
-      </Text>
-    </View>
+      <TextInput placeholder='Search...' className='text-[#423546]'/>
+
+      </View>
+
+      <View style={{
+        alignSelf:"center",
+        width:"90%",
+        height:500,
+        backgroundColor:"#FFFF",
+        marginTop:40,
+        borderRadius:20,
+        shadowColor: "#000",
+        shadowOffset: {
+          width: 0,
+          height: 2,
+        },
+        shadowOpacity: 0.25,
+        shadowRadius: 0.84,
+        elevation: 5,
+      }}>
+      
+
+
+      </View>
+      
+   
     </SafeAreaView>
   );
 }

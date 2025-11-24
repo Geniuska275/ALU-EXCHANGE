@@ -5,17 +5,32 @@
 
 import { Platform } from 'react-native';
 
-const tintColorLight = '#0a7ea4';
-const tintColorDark = '#fff';
+const tintColorDark = '#423546';
+const tintColorLight = '#E6E6FA';
+const textColor="#423546";
+const backgroundColorCard="#DEE2E2";
+const backgroundColorCard2="#FBFBFC";
+
+const textSecondary2="#AEB5B9";
+
+const textSecondary="#292C31";
+const textSecondary3="#41EC9C";
+
+
 
 export const Colors = {
   light: {
     text: '#11181C',
     background: '#fff',
-    tint: tintColorLight,
+    tint: tintColorDark,
     icon: '#687076',
     tabIconDefault: '#687076',
     tabIconSelected: tintColorLight,
+    card: backgroundColorCard,
+    card1: backgroundColorCard2,
+    textSecondary: textSecondary,
+    textSecondary1: textSecondary2,
+    textSecondary3: textSecondary3,
   },
   dark: {
     text: '#ECEDEE',
@@ -26,6 +41,38 @@ export const Colors = {
     tabIconSelected: tintColorDark,
   },
 };
+
+export const SIZES = {
+  xSmall: 12,
+  small: 14,
+  medium: 18,
+  large: 24,
+  xLarge: 32,
+  xxLarge: 40,
+};
+
+export const SHADOWS = {
+  small: {
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+    elevation: 2,
+  },
+  medium: {
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 5.84,
+    elevation: 5,
+  },
+}
 
 export const Fonts = Platform.select({
   ios: {
